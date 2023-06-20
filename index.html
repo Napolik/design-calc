@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interior design calc</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lato.css">
+
+</head>
+<body>
+<custom-quiz class="quiz">
+  <h2 class="quiz__heading">Розрахуйте вартість<br/>Вашого дизайн-проєкту</h2>
+  <h3 class="quiz__subheading">Дайте відповідь на запитання та<br/>отримайте персональний бонус</h3>
+
+  <button class="btn btn--dark js--start">ОТРИМАТИ РОЗРАХУНОК</button>
+
+  <send-notify class="quiz__slides">
+    <form method="post">
+    <div class="quiz__slide hidden">
+      <div class="quiz__slide-head">
+        <div class="quiz__question-num">1.</div>
+        <div class="quiz__question">Для якого приміщення потрібен дизайн:</div>
+        <div class="quiz__question-count">1/6</div>
+      </div>
+      <div class="quiz__slide-body">
+        <div class="quiz__answers quiz__answers--wrapped">
+          <label class="form-control">
+            <input type="checkbox" name="kvartira"/>
+            Квартира
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="house" checked />
+            Будинок
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="office" />
+            Офіс
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="cafe" />
+            Ресторан/Кафе
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="beauty" />
+            Салон краси
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="other" />
+            Інше:
+            <input type="text" name="other-text" />
+          </label>
+        </div>
+        <div class="quiz__nav">
+          <button type="button" class="quiz__nav-btn">
+            <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.197639" y1="0.711142" x2="19.1797" y2="13.6989" stroke="#FEFEFE" stroke-width="0.7"/>
+              <line y1="-0.35" x2="23" y2="-0.35" transform="matrix(0.825307 -0.564684 -0.564684 -0.825307 0 25.9878)" stroke="#FEFEFE" stroke-width="0.7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="quiz__slide hidden">
+      <div class="quiz__slide-head">
+        <div class="quiz__question-num">2.</div>
+        <div class="quiz__question">Яка загальна площа приміщення?</div>
+        <div class="quiz__question-count">2/6</div>
+      </div>
+      <div class="quiz__slide-body">
+        <div class="quiz__answers quiz__answers--wrapped">
+            <input type="text" name="area" />
+        </div>
+        <div class="quiz__nav">
+          <button type="button" class="quiz__nav-btn">
+            <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.197639" y1="0.711142" x2="19.1797" y2="13.6989" stroke="#FEFEFE" stroke-width="0.7"/>
+              <line y1="-0.35" x2="23" y2="-0.35" transform="matrix(0.825307 -0.564684 -0.564684 -0.825307 0 25.9878)" stroke="#FEFEFE" stroke-width="0.7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="quiz__slide hidden">
+      <div class="quiz__slide-head">
+        <div class="quiz__question-num">3.</div>
+        <div class="quiz__question">з Якого Ви міста??</div>
+        <div class="quiz__question-count">3/6</div>
+      </div>
+      <div class="quiz__slide-body">
+        <div class="quiz__answers quiz__answers--wrapped">
+            <input type="text" name="city" />
+        </div>
+        <div class="quiz__nav">
+          <button type="button" class="quiz__nav-btn">
+            <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.197639" y1="0.711142" x2="19.1797" y2="13.6989" stroke="#FEFEFE" stroke-width="0.7"/>
+              <line y1="-0.35" x2="23" y2="-0.35" transform="matrix(0.825307 -0.564684 -0.564684 -0.825307 0 25.9878)" stroke="#FEFEFE" stroke-width="0.7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="quiz__slide hidden">
+      <div class="quiz__slide-head">
+        <div class="quiz__question-num">4.</div>
+        <div class="quiz__question">Наскільки Ви готові брати участь у процесі ремонтних робіт?:</div>
+        <div class="quiz__question-count">4/6</div>
+      </div>
+      <div class="quiz__slide-body">
+        <div class="quiz__answers">
+          <label class="form-control">
+            <input type="checkbox" name="under-key" />
+            Хочу "Під ключ"
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="have-time" />
+            У мене є час контролювати весь процес
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="need-designer" checked />
+            Я готовий(а) брати участь, але потрібна допомога дизайнера
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="your-variant" />
+            Ваша відповідь:
+            <input type="text" name="your-answer" />
+          </label>
+        </div>
+        <div class="quiz__nav">
+          <button type="button" class="quiz__nav-btn">
+            <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.197639" y1="0.711142" x2="19.1797" y2="13.6989" stroke="#FEFEFE" stroke-width="0.7"/>
+              <line y1="-0.35" x2="23" y2="-0.35" transform="matrix(0.825307 -0.564684 -0.564684 -0.825307 0 25.9878)" stroke="#FEFEFE" stroke-width="0.7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="quiz__slide hidden">
+      <div class="quiz__slide-head">
+        <div class="quiz__question-num">5.</div>
+        <div class="quiz__question">Оберіть подарунок, який ми зафіксуємо за Вами:</div>
+        <div class="quiz__question-count">5/6</div>
+      </div>
+      <div class="quiz__slide-body">
+        <div class="quiz__answers">
+          <label class="form-control">
+            <input type="checkbox" name="minus15" />
+            Знижка на дизайн-проєкт 15%
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="free" />
+            Безкоштовна комплектація інтер'єру
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="minus50" />
+            Знижка на ведення ремонту 50%
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="minus10" />
+            Знижка на виробництво меблів 10%
+          </label>
+        </div>
+        <div class="quiz__nav">
+          <button type="button" class="quiz__nav-btn">
+            <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.197639" y1="0.711142" x2="19.1797" y2="13.6989" stroke="#FEFEFE" stroke-width="0.7"/>
+              <line y1="-0.35" x2="23" y2="-0.35" transform="matrix(0.825307 -0.564684 -0.564684 -0.825307 0 25.9878)" stroke="#FEFEFE" stroke-width="0.7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="quiz__slide hidden">
+      <div class="quiz__slide-head js--last-answers">
+        <div class="quiz__question-num">6.</div>
+        <div class="quiz__question">Ваші контактні данні<br/>для отримання розрахунку:</div>
+        <div class="quiz__question-count">6/6</div>
+      </div>
+      <div class="quiz__slide-body">
+        <div class="quiz__answers js--last-answers">
+          <div class="quiz__text-input">
+            <span>Ім'я:</span>
+            <input type="text" name="name" />
+          </div>
+          <div class="quiz__text-input">
+            <span>Номер телефону:</span>
+            <input type="text" name="Phone" />
+          </div>
+          <div class="quiz__text-input">
+            <span>Електронна адреса:</span>
+            <input type="text" name="Email" />
+          </div>
+
+          <button type="submit" class="btn btn--transparent">НАДІСЛАТИ</button>
+        </div>
+
+        <div class="quiz__thank-you hidden">
+          Дякуємо за вашу заявку! <br/>Наш менеджер зателефонує вам найближчим часом.
+        </div>
+      </div>
+    </div>
+    </form>
+  </send-notify>
+</custom-quiz>
+
+<script src="js/calc.js" defer></script>
+</body>
+</html>
